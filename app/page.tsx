@@ -261,7 +261,7 @@ export default function HomePage() {
       </section>
 
       {/* 8) Certified Brands */}
-      <section className="bg-white">
+      {/* <section className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-14">
           <div className="space-y-2">
             <h2 className="font-heading text-2xl font-semibold tracking-tight text-[#0f172a] sm:text-3xl">
@@ -280,10 +280,10 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* 9) Blog Teasers */}
-      <section className="bg-slate-50">
+      {/* <section className="bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-14">
           <div className="flex items-end justify-between gap-6">
             <div className="space-y-2">
@@ -322,7 +322,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* 10) Bottom CTA Banner */}
       <section className="bg-[#f97316] text-white">
