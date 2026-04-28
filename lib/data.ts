@@ -25,7 +25,7 @@ export type BlogPostTeaser = {
   slug: string;
 };
 
-export const phoneDisplay = "(703) 991-6445";
+export const phoneDisplay = "+1 (202) 438-1210";
 export const phoneTel = "+17039916445";
 
 export const appliances: Appliance[] = [

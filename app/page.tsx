@@ -21,7 +21,7 @@ import { getIcon } from "@/lib/icons";
 export const metadata: Metadata = {
   title: "Appliance Repair Done Right",
   description:
-    "Fast, reliable & professional appliance repair you can trust. Call (703) 991-6445 to schedule service.",
+    "Fast, reliable & professional appliance repair you can trust. Call +1 (202) 438-1210 to schedule service.",
 };
 
 export default function HomePage() {
@@ -62,7 +62,10 @@ export default function HomePage() {
 
           <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-white/10 bg-white/5">
             <Image
-              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80"
+              // src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80"
+              // src="/Applance image.png"
+              // src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=1600&q=80"
+              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=80"
               alt="Appliance repair technician working on a kitchen appliance"
               fill
               priority
@@ -343,7 +346,10 @@ export default function HomePage() {
             >
               <a href={`tel:${phoneTel}`}>Call Now</a>
             </Button>
-            <Button asChild className="bg-white text-[#0f172a] hover:bg-white/90">
+            <Button
+              asChild
+              className="bg-white text-[#0f172a] hover:bg-white/90"
+            >
               <Link href="/contact">Schedule Service</Link>
             </Button>
           </div>

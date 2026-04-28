@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import {
@@ -34,8 +35,15 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/85 backdrop-blur supports-[backdrop-filter]:bg-white/70">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
-          <span className="grid size-9 place-items-center rounded-lg bg-[#0f172a] text-white">
-            PF
+          <span className="grid size-9 place-items-center overflow-hidden rounded-lg bg-white">
+            <Image
+              src="/logo/SVG logo.svg"
+              alt="Empire Appliance Repair logo"
+              width={36}
+              height={36}
+              className="h-9 w-9 object-contain"
+              priority
+            />
           </span>
           <span className="text-sm font-semibold tracking-tight text-[#0f172a] sm:text-base">
             Empire Appliance Repair

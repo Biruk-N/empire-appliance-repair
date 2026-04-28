@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { ContactForm } from "@/components/site/contact-form";
 import { appliances, phoneDisplay, phoneTel, serviceAreas } from "@/lib/data";
@@ -10,13 +11,19 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12">
         <div className="grid gap-10 lg:grid-cols-4">
           <div className="space-y-3">
-            <div className="text-base font-semibold text-[#0f172a]">
-              Empire Appliance Repair
-            </div>
-            <p className="text-sm leading-6 text-slate-700">
-              Fast, reliable appliance repair for homeowners and property
-              managers across Northern Virginia, DC, and nearby Maryland.
-            </p>
+            <Link
+              href="/"
+              className="flex w-full items-center justify-center lg:justify-start"
+            >
+              <Image
+                src="/logo/SVG%20logo%20Full2.png"
+                alt="Empire Appliance Repair"
+                width={520}
+                height={130}
+                className="h-auto w-full max-w-[260px] object-contain sm:max-w-[300px] lg:max-w-[320px]"
+                priority
+              />
+            </Link>
           </div>
 
           <div className="space-y-3">
@@ -92,9 +99,9 @@ export function Footer() {
           </div>
         </div>
 
-        <Separator className="my-10" />
+        {/* <Separator className="my-10" /> */}
 
-        <div className="grid gap-6 lg:grid-cols-2 lg:items-start">
+        {/* <div className="grid gap-6 lg:grid-cols-2 lg:items-start">
           <div className="space-y-2">
             <div className="text-sm font-semibold text-[#0f172a]">
               Send a quick message
@@ -104,7 +111,7 @@ export function Footer() {
             </p>
           </div>
           <ContactForm className="grid gap-3" />
-        </div>
+        </div> */}
 
         <Separator className="my-10" />
 

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Empire Appliance Repair",
   },
   description:
-    "Fast, reliable appliance repair in Northern Virginia, Washington DC, and nearby Maryland. Call (703) 991-6445 to schedule service.",
+    "Fast, reliable appliance repair in Northern Virginia, Washington DC, and nearby Maryland. Call +1 (202) 438-1210 to schedule service.",
   metadataBase: new URL("https://profix-appliance-repair.local"),
   openGraph: {
     title: "Empire Appliance Repair",
